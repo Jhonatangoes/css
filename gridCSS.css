@@ -1,0 +1,40 @@
+/* regra unversal*/
+*{
+    color :black ;
+    text-align: center;
+}
+/* regras para o container do grid */
+.container-grid{
+    display: grid;
+    background-color: aqua;
+    padding: 10px;
+    grid-template-columns: auto auto auto ;
+    grid-template-areas: 'ace  ace ace';
+}
+.iten-grid{
+    background-color: coral;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px ;
+    border: 1px solid black;
+
+}
+/* regra de mesclagem de um item do grid*/
+
+#item1{
+    grid-column: 1/4;
+    
+}
+#item9{
+    grid-column: 1/4;
+    
+}
+/* regra de mesclagem especial 8*/
+
+/*#item3  {
+ grid-area: 3/1/span 4/ span 2;   
+}*/
+/* regra de layout especial */
+#item3{
+    grid-area: ace;
+}
